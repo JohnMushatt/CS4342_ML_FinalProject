@@ -13,6 +13,8 @@ from keras.models import Model, load_model
 from keras.layers import Input, Dense
 from keras.callbacks import ModelCheckpoint, TensorBoard
 from keras import regularizers
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 # importing or loading the dataset
 X_train = pd.read_csv('trainFt.csv')
