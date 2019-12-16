@@ -239,7 +239,7 @@ print("Default count: " + str(final_default_count) + " Non defaulting: " + str(f
 print("Default percent of total final test sample " + str(final_default_count/(final_nondefault_count+final_default_count)))
 print("default percent of total training sample " + str(training_default_count / (training_default_count + training_nondefault_count)))
 
-with open('data/final_predictions.csv','w') as result_file:
+with open('data/final_predictions_noedit.csv', 'w') as result_file:
     wr = csv.writer(result_file,dialect='excel')
     wr.writerow(final_y_pred)
 result_file.close()
